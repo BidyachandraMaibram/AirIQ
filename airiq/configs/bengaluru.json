@@ -1,0 +1,73 @@
+{
+  "city_id": "bengaluru",
+  "name": "Bengaluru",
+  "display_name": "Bengaluru, Karnataka",
+  "lat": 12.9716,
+  "lon": 77.5946,
+  "language": "kn",
+  "timezone": "Asia/Kolkata",
+  "station_ids": [
+    "Peenya, Bengaluru - CPCB",
+    "BTM Layout, Bengaluru - CPCB",
+    "Hebbal, Bengaluru - CPCB",
+    "BWSSB Kadabesanahalli, Bengaluru - CPCB"
+  ],
+  "stations": {
+    "Peenya, Bengaluru - CPCB": { "name": "Peenya", "lat": 13.0289, "lon": 77.5183 },
+    "BTM Layout, Bengaluru - CPCB": { "name": "BTM Layout", "lat": 12.9166, "lon": 77.6101 },
+    "Hebbal, Bengaluru - CPCB": { "name": "Hebbal", "lat": 13.0358, "lon": 77.5970 },
+    "BWSSB Kadabesanahalli, Bengaluru - CPCB": { "name": "BWSSB Kadabesanahalli", "lat": 12.9298, "lon": 77.6770 }
+  },
+  "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
+  "emission_sources": [
+    {
+      "name": "Peenya Industrial Area",
+      "lat": 13.0289, "lon": 77.5183,
+      "type": "industrial",
+      "intensity": 0.85
+    },
+    {
+      "name": "Outer Ring Road Traffic Corridor",
+      "lat": 12.9352, "lon": 77.6249,
+      "type": "traffic",
+      "intensity": 0.75
+    },
+    {
+      "name": "Whitefield IT Construction Zones",
+      "lat": 12.9698, "lon": 77.7499,
+      "type": "construction",
+      "intensity": 0.55
+    },
+    {
+      "name": "Bellandur Lake Waste Burning",
+      "lat": 12.9253, "lon": 77.6731,
+      "type": "waste_burning",
+      "intensity": 0.65
+    },
+    {
+      "name": "Yeshwanthpur Railway Yard",
+      "lat": 13.0215, "lon": 77.5513,
+      "type": "industrial",
+      "intensity": 0.45
+    }
+  ],
+  "wards": [
+    { "ward_id": "BLR_W01", "name": "Peenya",       "lat": 13.0289, "lon": 77.5183, "population": 142000 },
+    { "ward_id": "BLR_W02", "name": "Whitefield",   "lat": 12.9698, "lon": 77.7499, "population": 218000 },
+    { "ward_id": "BLR_W03", "name": "Koramangala",  "lat": 12.9352, "lon": 77.6245, "population": 175000 },
+    { "ward_id": "BLR_W04", "name": "Hebbal",        "lat": 13.0358, "lon": 77.5970, "population": 130000 },
+    { "ward_id": "BLR_W05", "name": "Jayanagar",    "lat": 12.9279, "lon": 77.5832, "population": 160000 },
+    { "ward_id": "BLR_W06", "name": "Yeshwanthpur", "lat": 13.0215, "lon": 77.5513, "population": 125000 }
+  ],
+  "vulnerable_sites": [
+    { "name": "St. John's Medical College Hospital", "type": "hospital", "lat": 12.9507, "lon": 77.6160 },
+    { "name": "Manipal Hospital Whitefield",         "type": "hospital", "lat": 12.9750, "lon": 77.7420 },
+    { "name": "Victoria Hospital",                   "type": "hospital", "lat": 12.9601, "lon": 77.5759 },
+    { "name": "National Public School Koramangala",  "type": "school",   "lat": 12.9352, "lon": 77.6245 },
+    { "name": "Delhi Public School Whitefield",      "type": "school",   "lat": 12.9698, "lon": 77.7499 }
+  ],
+  "aqi_thresholds": {
+    "good": 50, "satisfactory": 100, "moderate": 200,
+    "poor": 300, "very_poor": 400, "severe": 500
+  }
+}

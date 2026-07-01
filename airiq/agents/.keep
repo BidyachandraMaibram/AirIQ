@@ -1,0 +1,2 @@
+# agents/ — AI agent modules go here (one file per city/task)
+# Example: delhi_aqi_agent.py, mumbai_forecast_agent.py

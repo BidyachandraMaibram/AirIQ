@@ -1,0 +1,73 @@
+{
+  "city_id": "kolkata",
+  "name": "Kolkata",
+  "display_name": "Kolkata, West Bengal",
+  "lat": 22.5726,
+  "lon": 88.3639,
+  "language": "bn",
+  "timezone": "Asia/Kolkata",
+  "station_ids": [
+    "Ballygunge, Kolkata - WBPCB",
+    "Bidhannagar, Kolkata - WBPCB",
+    "Victoria, Kolkata - WBPCB",
+    "Jadavpur, Kolkata - WBPCB"
+  ],
+  "stations": {
+    "Ballygunge, Kolkata - WBPCB": { "name": "Ballygunge", "lat": 22.5258, "lon": 88.3631 },
+    "Bidhannagar, Kolkata - WBPCB": { "name": "Bidhannagar", "lat": 22.5868, "lon": 88.3611 },
+    "Victoria, Kolkata - WBPCB": { "name": "Victoria", "lat": 22.5448, "lon": 88.3426 },
+    "Jadavpur, Kolkata - WBPCB": { "name": "Jadavpur", "lat": 22.4997, "lon": 88.3714 }
+  },
+  "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
+  "emission_sources": [
+    {
+      "name": "Howrah Industrial Corridor",
+      "lat": 22.5958, "lon": 88.2636,
+      "type": "industrial",
+      "intensity": 0.85
+    },
+    {
+      "name": "Ultadanga Traffic Junction",
+      "lat": 22.5868, "lon": 88.3986,
+      "type": "traffic",
+      "intensity": 0.70
+    },
+    {
+      "name": "Dhapa Waste Burning (Largest Landfill)",
+      "lat": 22.5540, "lon": 88.4236,
+      "type": "waste_burning",
+      "intensity": 0.90
+    },
+    {
+      "name": "Garden Reach Port",
+      "lat": 22.5180, "lon": 88.3170,
+      "type": "industrial",
+      "intensity": 0.65
+    },
+    {
+      "name": "Baranagar Jute Mills",
+      "lat": 22.6440, "lon": 88.3760,
+      "type": "industrial",
+      "intensity": 0.55
+    }
+  ],
+  "wards": [
+    { "ward_id": "KOL_W01", "name": "Howrah",       "lat": 22.5958, "lon": 88.2636, "population": 310000 },
+    { "ward_id": "KOL_W02", "name": "Ultadanga",    "lat": 22.5868, "lon": 88.3986, "population": 180000 },
+    { "ward_id": "KOL_W03", "name": "Dhapa",        "lat": 22.5540, "lon": 88.4236, "population": 95000  },
+    { "ward_id": "KOL_W04", "name": "Garden Reach", "lat": 22.5180, "lon": 88.3170, "population": 210000 },
+    { "ward_id": "KOL_W05", "name": "Salt Lake",    "lat": 22.5697, "lon": 88.4147, "population": 275000 },
+    { "ward_id": "KOL_W06", "name": "New Town",     "lat": 22.5944, "lon": 88.4750, "population": 190000 }
+  ],
+  "vulnerable_sites": [
+    { "name": "SSKM Hospital (PG Hospital)",      "type": "hospital",        "lat": 22.5355, "lon": 88.3413 },
+    { "name": "NRS Medical College & Hospital",   "type": "hospital",        "lat": 22.5620, "lon": 88.3681 },
+    { "name": "Calcutta Medical College",         "type": "hospital",        "lat": 22.5731, "lon": 88.3544 },
+    { "name": "La Martiniere for Boys",           "type": "school",          "lat": 22.5290, "lon": 88.3540 },
+    { "name": "Dhapa Waste Pickers (Informal)",   "type": "outdoor_workers", "lat": 22.5540, "lon": 88.4236 }
+  ],
+  "aqi_thresholds": {
+    "good": 50, "satisfactory": 100, "moderate": 200,
+    "poor": 300, "very_poor": 400, "severe": 500
+  }
+}

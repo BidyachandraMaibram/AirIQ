@@ -1,0 +1,75 @@
+{
+  "city_id": "delhi",
+  "name": "Delhi",
+  "display_name": "Delhi, NCT",
+  "lat": 28.6139,
+  "lon": 77.2090,
+  "language": "hi",
+  "timezone": "Asia/Kolkata",
+  "station_ids": [
+    "Anand Vihar, Delhi - DPCC",
+    "R K Puram, Delhi - DPCC",
+    "Dwarka-Sector 8, Delhi - DPCC",
+    "Rohini, Delhi - DPCC",
+    "Okhla Phase-3, Delhi - DPCC"
+  ],
+  "stations": {
+    "Anand Vihar, Delhi - DPCC": { "name": "Anand Vihar", "lat": 28.6469, "lon": 77.3160 },
+    "R K Puram, Delhi - DPCC": { "name": "R K Puram", "lat": 28.5640, "lon": 77.1822 },
+    "Dwarka-Sector 8, Delhi - DPCC": { "name": "Dwarka Sector 8", "lat": 28.5677, "lon": 77.0590 },
+    "Rohini, Delhi - DPCC": { "name": "Rohini", "lat": 28.7041, "lon": 77.1025 },
+    "Okhla Phase-3, Delhi - DPCC": { "name": "Okhla Phase 3", "lat": 28.5355, "lon": 77.2800 }
+  },
+  "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
+  "emission_sources": [
+    {
+      "name": "Anand Vihar Traffic Hotspot",
+      "lat": 28.6469, "lon": 77.3160,
+      "type": "traffic",
+      "intensity": 0.90
+    },
+    {
+      "name": "Okhla Industrial Area",
+      "lat": 28.5355, "lon": 77.2800,
+      "type": "industrial",
+      "intensity": 0.80
+    },
+    {
+      "name": "Narela Industrial Zone",
+      "lat": 28.8554, "lon": 77.0950,
+      "type": "industrial",
+      "intensity": 0.75
+    },
+    {
+      "name": "Stubble Burning Plume (NW — Haryana/Punjab)",
+      "lat": 29.0000, "lon": 76.9000,
+      "type": "waste_burning",
+      "intensity": 0.95
+    },
+    {
+      "name": "Bhalswa Landfill",
+      "lat": 28.7414, "lon": 77.1564,
+      "type": "waste_burning",
+      "intensity": 0.70
+    }
+  ],
+  "wards": [
+    { "ward_id": "DEL_W01", "name": "Anand Vihar",   "lat": 28.6469, "lon": 77.3160, "population": 185000 },
+    { "ward_id": "DEL_W02", "name": "Okhla",         "lat": 28.5355, "lon": 77.2800, "population": 220000 },
+    { "ward_id": "DEL_W03", "name": "Rohini",        "lat": 28.7041, "lon": 77.1025, "population": 350000 },
+    { "ward_id": "DEL_W04", "name": "Dwarka",        "lat": 28.5677, "lon": 77.0590, "population": 280000 },
+    { "ward_id": "DEL_W05", "name": "Saket",         "lat": 28.5245, "lon": 77.2167, "population": 145000 },
+    { "ward_id": "DEL_W06", "name": "Chandni Chowk", "lat": 28.6506, "lon": 77.2301, "population": 200000 }
+  ],
+  "vulnerable_sites": [
+    { "name": "AIIMS New Delhi",           "type": "hospital",         "lat": 28.5672, "lon": 77.2100 },
+    { "name": "Safdarjung Hospital",       "type": "hospital",         "lat": 28.5680, "lon": 77.2033 },
+    { "name": "GTB Hospital Shahdara",     "type": "hospital",         "lat": 28.6769, "lon": 77.3090 },
+    { "name": "Kendriya Vidyalaya INA",    "type": "school",           "lat": 28.5750, "lon": 77.2020 },
+    { "name": "Anand Vihar Outdoor Market","type": "outdoor_workers",  "lat": 28.6469, "lon": 77.3160 }
+  ],
+  "aqi_thresholds": {
+    "good": 50, "satisfactory": 100, "moderate": 200,
+    "poor": 300, "very_poor": 400, "severe": 500
+  }
+}

@@ -1,0 +1,32 @@
+# ── Web framework ────────────────────────────────────────────────────────────
+fastapi
+uvicorn[standard]          # includes websockets, httptools, uvloop (Linux/Mac)
+
+# ── Caching ──────────────────────────────────────────────────────────────────
+redis                      # redis-py with asyncio support (redis.asyncio)
+
+# ── Task scheduling ──────────────────────────────────────────────────────────
+apscheduler
+
+# ── HTTP client ──────────────────────────────────────────────────────────────
+httpx                      # async HTTP for external API calls (CPCB, etc.)
+
+# ── Config / env ─────────────────────────────────────────────────────────────
+python-dotenv
+pydantic
+pydantic-settings
+
+# ── Data science / ML ────────────────────────────────────────────────────────
+numpy
+pandas
+scikit-learn
+xgboost
+
+# ── Geospatial ───────────────────────────────────────────────────────────────
+geopy
+
+# ── ML utilities ─────────────────────────────────────────────────────────────
+joblib
+
+# ── AI / LLM ─────────────────────────────────────────────────────────────────
+anthropic                  # Claude API client

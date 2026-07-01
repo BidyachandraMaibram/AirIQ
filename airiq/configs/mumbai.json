@@ -1,0 +1,73 @@
+{
+  "city_id": "mumbai",
+  "name": "Mumbai",
+  "display_name": "Mumbai, Maharashtra",
+  "lat": 19.0760,
+  "lon": 72.8777,
+  "language": "mr",
+  "timezone": "Asia/Kolkata",
+  "station_ids": [
+    "Bandra Kurla Complex, Mumbai - MPCB",
+    "Chembur, Mumbai - MPCB",
+    "Colaba, Mumbai - MPCB",
+    "Worli, Mumbai - MPCB"
+  ],
+  "stations": {
+    "Bandra Kurla Complex, Mumbai - MPCB": { "name": "Bandra Kurla Complex", "lat": 19.0596, "lon": 72.8656 },
+    "Chembur, Mumbai - MPCB": { "name": "Chembur", "lat": 19.0626, "lon": 72.8997 },
+    "Colaba, Mumbai - MPCB": { "name": "Colaba", "lat": 18.9067, "lon": 72.8147 },
+    "Worli, Mumbai - MPCB": { "name": "Worli", "lat": 19.0176, "lon": 72.8168 }
+  },
+  "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
+  "emission_sources": [
+    {
+      "name": "Chembur Industrial Belt",
+      "lat": 19.0626, "lon": 72.8997,
+      "type": "industrial",
+      "intensity": 0.85
+    },
+    {
+      "name": "Dharavi Waste Burning",
+      "lat": 19.0422, "lon": 72.8538,
+      "type": "waste_burning",
+      "intensity": 0.80
+    },
+    {
+      "name": "Mumbai Port Diesel Fleet",
+      "lat": 18.9398, "lon": 72.8355,
+      "type": "industrial",
+      "intensity": 0.70
+    },
+    {
+      "name": "Bandra-Kurla Complex Traffic",
+      "lat": 19.0596, "lon": 72.8656,
+      "type": "traffic",
+      "intensity": 0.65
+    },
+    {
+      "name": "Deonar Dumping Ground",
+      "lat": 19.0537, "lon": 72.9307,
+      "type": "waste_burning",
+      "intensity": 0.75
+    }
+  ],
+  "wards": [
+    { "ward_id": "MUM_W01", "name": "Chembur",  "lat": 19.0626, "lon": 72.8997, "population": 210000 },
+    { "ward_id": "MUM_W02", "name": "Dharavi",  "lat": 19.0422, "lon": 72.8538, "population": 700000 },
+    { "ward_id": "MUM_W03", "name": "Andheri",  "lat": 19.1197, "lon": 72.8464, "population": 450000 },
+    { "ward_id": "MUM_W04", "name": "Bandra",   "lat": 19.0596, "lon": 72.8397, "population": 320000 },
+    { "ward_id": "MUM_W05", "name": "Colaba",   "lat": 18.9067, "lon": 72.8147, "population": 95000  },
+    { "ward_id": "MUM_W06", "name": "Thane",    "lat": 19.2183, "lon": 72.9781, "population": 380000 }
+  ],
+  "vulnerable_sites": [
+    { "name": "KEM Hospital Parel",          "type": "hospital",        "lat": 18.9966, "lon": 72.8403 },
+    { "name": "Tata Memorial Centre",        "type": "hospital",        "lat": 18.9999, "lon": 72.8401 },
+    { "name": "Nanavati Max Hospital",       "type": "hospital",        "lat": 19.1006, "lon": 72.8482 },
+    { "name": "Cathedral & John Connon School","type": "school",        "lat": 18.9311, "lon": 72.8338 },
+    { "name": "Dharavi Open Market Workers", "type": "outdoor_workers", "lat": 19.0422, "lon": 72.8538 }
+  ],
+  "aqi_thresholds": {
+    "good": 50, "satisfactory": 100, "moderate": 200,
+    "poor": 300, "very_poor": 400, "severe": 500
+  }
+}

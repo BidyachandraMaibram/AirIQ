@@ -1,0 +1,3 @@
+# configs/ — City configuration JSON files go here
+# Example: delhi.json, mumbai.json, bangalore.json
+# Each file describes: station IDs, pollutant thresholds, lat/lon, etc.
