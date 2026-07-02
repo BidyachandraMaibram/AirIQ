@@ -7,16 +7,20 @@
   "language": "bn",
   "timezone": "Asia/Kolkata",
   "station_ids": [
-    "Ballygunge, Kolkata - WBPCB",
-    "Bidhannagar, Kolkata - WBPCB",
+    "Jadavpur, Kolkata - WBPCB",
     "Victoria, Kolkata - WBPCB",
-    "Jadavpur, Kolkata - WBPCB"
+    "Bidhannagar, Kolkata - WBPCB",
+    "Ballygunge, Kolkata - WBPCB",
+    "Rabindra Sarobar, Kolkata - WBPCB",
+    "Fort William, Kolkata - WBPCB"
   ],
   "stations": {
-    "Ballygunge, Kolkata - WBPCB": { "name": "Ballygunge", "lat": 22.5258, "lon": 88.3631 },
-    "Bidhannagar, Kolkata - WBPCB": { "name": "Bidhannagar", "lat": 22.5868, "lon": 88.3611 },
-    "Victoria, Kolkata - WBPCB": { "name": "Victoria", "lat": 22.5448, "lon": 88.3426 },
-    "Jadavpur, Kolkata - WBPCB": { "name": "Jadavpur", "lat": 22.4997, "lon": 88.3714 }
+    "Jadavpur, Kolkata - WBPCB":           {"name": "Jadavpur",          "lat": 22.4996, "lon": 88.3711},
+    "Victoria, Kolkata - WBPCB":           {"name": "Victoria",          "lat": 22.5448, "lon": 88.3426},
+    "Bidhannagar, Kolkata - WBPCB":        {"name": "Bidhannagar",       "lat": 22.5697, "lon": 88.4324},
+    "Ballygunge, Kolkata - WBPCB":         {"name": "Ballygunge",        "lat": 22.5263, "lon": 88.3675},
+    "Rabindra Sarobar, Kolkata - WBPCB":   {"name": "Rabindra Sarobar",  "lat": 22.5106, "lon": 88.3493},
+    "Fort William, Kolkata - WBPCB":       {"name": "Fort William",      "lat": 22.5565, "lon": 88.3433}
   },
   "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
   "emission_sources": [

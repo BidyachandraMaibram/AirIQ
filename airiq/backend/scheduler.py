@@ -87,7 +87,7 @@ async def run_city_pipeline(city_config: dict, redis_client: Any = None):
             "stations":      stations_health,
             "data_source":   aqi_source
         }
-        await set_json(f"health:{city_id}", health_blob, ttl_seconds=2100) # 35 min TTL
+        await set_json(f"health:{city_id}", health_blob, ttl_seconds=1020) # 17 min TTL
         
         # ── Step 4: Run Ward Analysis Blobs ──────────────────────────────────
         ward_aqi_map = {}
@@ -176,7 +176,7 @@ async def run_city_pipeline(city_config: dict, redis_client: Any = None):
                 "updated_at":      datetime.now(timezone.utc).isoformat(),
                 "data_source":     closest_rec.get("data_source", "mock")
             }
-            await set_json(f"ward:{city_id}:{w_id}", ward_blob, ttl_seconds=2100) # 35 min TTL
+            await set_json(f"ward:{city_id}:{w_id}", ward_blob, ttl_seconds=1020) # 17 min TTL
             
         # ── Step 5: Write city summary to Redis ─────────────────────────────
         summary_wards = []
@@ -203,7 +203,7 @@ async def run_city_pipeline(city_config: dict, redis_client: Any = None):
             "updated_at": datetime.now(timezone.utc).isoformat(),
             "data_source": aqi_source
         }
-        await set_json(f"summary:{city_id}", summary_blob, ttl_seconds=2100) # 35 min TTL
+        await set_json(f"summary:{city_id}", summary_blob, ttl_seconds=1020) # 17 min TTL
         
         logger.info("[%s] Pipeline run completed successfully.", city_id)
         

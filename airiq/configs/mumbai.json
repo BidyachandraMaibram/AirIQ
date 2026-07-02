@@ -7,16 +7,20 @@
   "language": "mr",
   "timezone": "Asia/Kolkata",
   "station_ids": [
+    "Worli, Mumbai - MPCB",
     "Bandra Kurla Complex, Mumbai - MPCB",
     "Chembur, Mumbai - MPCB",
-    "Colaba, Mumbai - MPCB",
-    "Worli, Mumbai - MPCB"
+    "Navy Nagar-Colaba, Mumbai - IITM",
+    "Borivali East, Mumbai - IITM",
+    "Powai, Mumbai - MPCB"
   ],
   "stations": {
-    "Bandra Kurla Complex, Mumbai - MPCB": { "name": "Bandra Kurla Complex", "lat": 19.0596, "lon": 72.8656 },
-    "Chembur, Mumbai - MPCB": { "name": "Chembur", "lat": 19.0626, "lon": 72.8997 },
-    "Colaba, Mumbai - MPCB": { "name": "Colaba", "lat": 18.9067, "lon": 72.8147 },
-    "Worli, Mumbai - MPCB": { "name": "Worli", "lat": 19.0176, "lon": 72.8168 }
+    "Worli, Mumbai - MPCB":                {"name": "Worli",          "lat": 19.0176, "lon": 72.8174},
+    "Bandra Kurla Complex, Mumbai - MPCB": {"name": "Bandra Kurla",   "lat": 19.0654, "lon": 72.8655},
+    "Chembur, Mumbai - MPCB":             {"name": "Chembur",         "lat": 19.0522, "lon": 72.8994},
+    "Navy Nagar-Colaba, Mumbai - IITM":   {"name": "Colaba",          "lat": 18.9067, "lon": 72.8147},
+    "Borivali East, Mumbai - IITM":       {"name": "Borivali East",   "lat": 19.2288, "lon": 72.8658},
+    "Powai, Mumbai - MPCB":               {"name": "Powai",           "lat": 19.1197, "lon": 72.9051}
   },
   "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
   "emission_sources": [

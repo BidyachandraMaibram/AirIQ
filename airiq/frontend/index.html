@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,12 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
   <!-- Leaflet Map CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  
+
   <style>
     /* ── Color System & Reset ────────────────────────────────────────────── */
     :root {
@@ -20,7 +23,7 @@
       --border-color: #23263b;
       --text-main: #e2e8f0;
       --text-muted: #94a3b8;
-      
+
       /* AQI Colors */
       --aqi-good: #22c55e;
       --aqi-satisfactory: #84cc16;
@@ -82,7 +85,9 @@
     }
 
     @keyframes spin {
-      to { transform: rotate(360deg); }
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     /* ── Header ──────────────────────────────────────────────────────────── */
@@ -151,6 +156,7 @@
       gap: 4px;
       margin-left: auto;
     }
+
     .header-nav-link {
       color: var(--text-muted);
       text-decoration: none;
@@ -162,17 +168,19 @@
       transition: color 0.15s, border-color 0.15s, background 0.15s;
       white-space: nowrap;
     }
+
     .header-nav-link:hover {
       color: var(--text-main);
-      border-color: rgba(99,102,241,0.5);
-      background: rgba(99,102,241,0.08);
+      border-color: rgba(99, 102, 241, 0.5);
+      background: rgba(99, 102, 241, 0.08);
     }
 
     /* ── Grid Layout ─────────────────────────────────────────────────────── */
     .dashboard-container {
       flex: 1;
       display: grid;
-      grid-template-columns: 320px 1fr 0px; /* Right column starts collapsed, expanded via JS */
+      grid-template-columns: 320px 1fr 0px;
+      /* Right column starts collapsed, expanded via JS */
       position: relative;
       transition: grid-template-columns 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
@@ -519,10 +527,29 @@
       border-radius: 4px;
     }
 
-    .priority-critical { background-color: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
-    .priority-high     { background-color: rgba(249, 115, 22, 0.15); color: #fb923c; border: 1px solid rgba(249, 115, 22, 0.3); }
-    .priority-medium   { background-color: rgba(234, 179, 8, 0.15); color: #facc15; border: 1px solid rgba(234, 179, 8, 0.3); }
-    .priority-low      { background-color: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+    .priority-critical {
+      background-color: rgba(239, 68, 68, 0.15);
+      color: #f87171;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .priority-high {
+      background-color: rgba(249, 115, 22, 0.15);
+      color: #fb923c;
+      border: 1px solid rgba(249, 115, 22, 0.3);
+    }
+
+    .priority-medium {
+      background-color: rgba(234, 179, 8, 0.15);
+      color: #facc15;
+      border: 1px solid rgba(234, 179, 8, 0.3);
+    }
+
+    .priority-low {
+      background-color: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
 
     .enf-dept {
       font-size: 0.7rem;
@@ -698,13 +725,14 @@
       border-radius: 24px;
       font-size: 0.87rem;
       font-weight: 600;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
       opacity: 0;
       pointer-events: none;
       transition: opacity 0.25s ease, transform 0.25s ease;
       z-index: 9999;
       white-space: nowrap;
     }
+
     .toast.show {
       opacity: 1;
       transform: translateX(-50%) translateY(0);
@@ -715,8 +743,8 @@
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      background: rgba(99,102,241,0.12);
-      border: 1px solid rgba(99,102,241,0.3);
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.3);
       color: #a5b4fc;
       font-size: 0.72rem;
       font-weight: 600;
@@ -724,9 +752,11 @@
       border-radius: 12px;
       letter-spacing: 0.02em;
     }
+
     .rmse-badge::before {
       content: '';
-      width: 6px; height: 6px;
+      width: 6px;
+      height: 6px;
       border-radius: 50%;
       background: #6366f1;
     }
@@ -744,12 +774,17 @@
       flex-shrink: 0;
       gap: 12px;
     }
+
     .app-footer a {
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.15s;
     }
-    .app-footer a:hover { color: var(--text-main); }
+
+    .app-footer a:hover {
+      color: var(--text-main);
+    }
+
     .footer-kbd {
       display: inline-block;
       background: var(--bg-panel);
@@ -773,6 +808,7 @@
       letter-spacing: 0.05em;
       transition: opacity 0.2s ease-in-out;
     }
+
     .source-badge::before {
       content: '';
       width: 6px;
@@ -780,30 +816,36 @@
       border-radius: 50%;
       display: inline-block;
     }
+
     .source-badge.badge-live {
       background: rgba(34, 197, 94, 0.1);
       color: #22c55e;
       border: 1px solid rgba(34, 197, 94, 0.25);
     }
+
     .source-badge.badge-live::before {
       background: #22c55e;
       box-shadow: 0 0 6px #22c55e;
     }
+
     .source-badge.badge-mock {
       background: rgba(249, 115, 22, 0.1);
       color: #f97316;
       border: 1px solid rgba(249, 115, 22, 0.25);
     }
+
     .source-badge.badge-mock::before {
       background: #f97316;
       box-shadow: 0 0 6px #f97316;
     }
+
     .badge-hidden {
       opacity: 0;
       pointer-events: none;
     }
   </style>
 </head>
+
 <body>
 
   <!-- Loading State Indicator -->
@@ -818,23 +860,23 @@
       <div class="brand-logo">AirIQ</div>
       <span class="brand-badge">PRO</span>
     </div>
-    <div class="system-status">
-      <span id="scheduler-status" class="status-indicator">
-        <div class="status-dot"></div>
-        Intelligence Loop Running
+    <div class="system-status" style="margin-left: 800px;>
+      <span id=" scheduler-status" class="status-indicator">
+      <div class="status-dot"></div>
+      Intelligence Loop Running
       </span>
       <span>System Cache Warm</span>
     </div>
     <!-- Nav links — always visible in header -->
     <nav class="header-nav">
       <a href="#" id="nav-status-link" class="header-nav-link">&#9642; System Status</a>
-      <a href="#" id="nav-arch-link"   class="header-nav-link">&#9642; Architecture</a>
+      <a href="#" id="nav-arch-link" class="header-nav-link">&#9642; Architecture</a>
     </nav>
   </header>
 
   <!-- Dashboard Main Layout -->
   <div class="dashboard-container" id="dashboard">
-    
+
     <!-- Left Panel: Selector + Ward List -->
     <div class="sidebar">
       <div class="city-picker-box">
@@ -878,7 +920,8 @@
     <span>
       <a href="/status.html" id="status-link">System Status</a>
       &nbsp;&nbsp;
-      <span class="footer-kbd">1</span><span class="footer-kbd">2</span><span class="footer-kbd">3</span><span class="footer-kbd">4</span> switch city
+      <span class="footer-kbd">1</span><span class="footer-kbd">2</span><span class="footer-kbd">3</span><span
+        class="footer-kbd">4</span> switch city
     </span>
   </footer>
 
@@ -1077,7 +1120,7 @@
     function renderWardList(wards) {
       const container = document.getElementById("ward-list-el");
       container.innerHTML = "";
-      
+
       if (!wards || wards.length === 0) {
         container.innerHTML = `<div style="font-size:0.85rem; color:var(--text-muted); text-align:center;">No wards available.</div>`;
         return;
@@ -1157,12 +1200,12 @@
       }
 
       await fetchWardDetail(wardId);
-      
-      // Auto-refresh configuration (every 5 mins)
+
+      // Auto-refresh configuration (every 15 mins — matches backend pipeline cadence)
       if (refreshInterval) clearInterval(refreshInterval);
       refreshInterval = setInterval(() => {
         fetchWardDetail(wardId, true); // silent refresh
-      }, 300000); 
+      }, 900000);
     }
 
     async function fetchWardDetail(wardId, silent = false) {
@@ -1171,7 +1214,7 @@
         const res = await fetch(`${API_BASE}/api/ward/${currentCityId}/${wardId}`);
         if (!res.ok) throw new Error("Could not load ward analyses");
         const data = await res.json();
-        
+
         renderDetailPanel(data);
       } catch (err) {
         console.error(err);
@@ -1190,7 +1233,7 @@
     function renderDetailPanel(data) {
       const panel = document.getElementById("detail-panel-el");
       const aqiStyle = getAqiStyle(data.aqi);
-      
+
       // Parse updated timestamp offset
       let timeStr = "recently";
       if (data.updated_at) {
@@ -1201,7 +1244,7 @@
 
       // Check incident report visibility
       const showsIncident = (data.category === "Very Poor" || data.category === "Severe");
-      
+
       // Render details sections
       panel.innerHTML = `
         <!-- Section 1: Header -->
@@ -1220,14 +1263,14 @@
           <div class="section-title">AQI Forecast Horizon</div>
           <div class="forecast-strip">
             ${data.forecast.forecast.map(f => {
-              const fStyle = getAqiStyle(f.predicted_aqi);
-              return `
+        const fStyle = getAqiStyle(f.predicted_aqi);
+        return `
                 <div class="forecast-box">
                   <span class="forecast-hour">${f.hours_ahead}h</span>
                   <span class="forecast-aqi" style="background-color:${fStyle.color}">${f.predicted_aqi}</span>
                 </div>
               `;
-            }).join('')}
+      }).join('')}
           </div>
         </div>
 
@@ -1305,22 +1348,22 @@
         const res = await fetch(`${API_BASE}/api/incident/${currentCityId}/${activeWardId}`);
         if (!res.ok) throw new Error("Failed to load incident report");
         const data = await res.json();
-        
+
         document.getElementById("report-meta").textContent = `Generated: ${new Date(data.generated_at).toLocaleString()} | Ward ID: ${activeWardId}`;
-        
+
         // Simple markdown parsing implementation for HTML structure
         const bodyEl = document.getElementById("report-body-el");
         let html = data.report_markdown || "";
-        
+
         // Regex conversion for headings: ## Header to <h2>
         html = html.replace(/^##\s+(.*)$/gmi, '<h2>$1</h2>');
-        
+
         // Regex conversion for bullet items: * Item to <li>
         html = html.replace(/^\*\s+(.*)$/gmi, '<li>$1</li>');
-        
+
         // Wrap bullet lists inside tags
         html = html.replace(/(<li>.*<\/li>)/gms, '<ul>$1</ul>');
-        
+
         bodyEl.innerHTML = html;
         document.getElementById("incident-modal").classList.add("open");
       } catch (err) {
@@ -1350,7 +1393,7 @@
         // Don't fire if user is typing in an input
         if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
         const key = e.key;
-        if (!["1","2","3","4"].includes(key)) return;
+        if (!["1", "2", "3", "4"].includes(key)) return;
 
         const select = document.getElementById("city-select");
         const options = Array.from(select.options).filter(o => o.value);
@@ -1386,8 +1429,9 @@
           document.getElementById("footer-station-count").textContent =
             cities.length * 4;
         })
-        .catch(() => {});
+        .catch(() => { });
     });
   </script>
 </body>
+
 </html>

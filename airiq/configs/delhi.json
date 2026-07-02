@@ -11,14 +11,18 @@
     "R K Puram, Delhi - DPCC",
     "Dwarka-Sector 8, Delhi - DPCC",
     "Rohini, Delhi - DPCC",
-    "Okhla Phase-3, Delhi - DPCC"
+    "Okhla Phase-2, Delhi - DPCC",
+    "Punjabi Bagh, Delhi - DPCC",
+    "Wazirpur, Delhi - DPCC"
   ],
   "stations": {
-    "Anand Vihar, Delhi - DPCC": { "name": "Anand Vihar", "lat": 28.6469, "lon": 77.3160 },
-    "R K Puram, Delhi - DPCC": { "name": "R K Puram", "lat": 28.5640, "lon": 77.1822 },
-    "Dwarka-Sector 8, Delhi - DPCC": { "name": "Dwarka Sector 8", "lat": 28.5677, "lon": 77.0590 },
-    "Rohini, Delhi - DPCC": { "name": "Rohini", "lat": 28.7041, "lon": 77.1025 },
-    "Okhla Phase-3, Delhi - DPCC": { "name": "Okhla Phase 3", "lat": 28.5355, "lon": 77.2800 }
+    "Anand Vihar, Delhi - DPCC":    {"name": "Anand Vihar",   "lat": 28.6469, "lon": 77.3164},
+    "R K Puram, Delhi - DPCC":      {"name": "R K Puram",     "lat": 28.5638, "lon": 77.1746},
+    "Dwarka-Sector 8, Delhi - DPCC":{"name": "Dwarka",         "lat": 28.5921, "lon": 77.0460},
+    "Rohini, Delhi - DPCC":         {"name": "Rohini",         "lat": 28.7041, "lon": 77.1025},
+    "Okhla Phase-2, Delhi - DPCC":  {"name": "Okhla",          "lat": 28.5311, "lon": 77.2719},
+    "Punjabi Bagh, Delhi - DPCC":   {"name": "Punjabi Bagh",   "lat": 28.6667, "lon": 77.1333},
+    "Wazirpur, Delhi - DPCC":       {"name": "Wazirpur",       "lat": 28.6981, "lon": 77.1649}
   },
   "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
   "emission_sources": [

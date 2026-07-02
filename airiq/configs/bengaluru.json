@@ -7,16 +7,20 @@
   "language": "kn",
   "timezone": "Asia/Kolkata",
   "station_ids": [
-    "Peenya, Bengaluru - CPCB",
     "BTM Layout, Bengaluru - CPCB",
-    "Hebbal, Bengaluru - CPCB",
-    "BWSSB Kadabesanahalli, Bengaluru - CPCB"
+    "Hebbal, Bengaluru - KSPCB",
+    "Silk Board, Bengaluru - KSPCB",
+    "Jayanagar 5th Block, Bengaluru - KSPCB",
+    "Hombegowda Nagar, Bengaluru - KSPCB",
+    "Bapuji Nagar, Bengaluru - KSPCB"
   ],
   "stations": {
-    "Peenya, Bengaluru - CPCB": { "name": "Peenya", "lat": 13.0289, "lon": 77.5183 },
-    "BTM Layout, Bengaluru - CPCB": { "name": "BTM Layout", "lat": 12.9166, "lon": 77.6101 },
-    "Hebbal, Bengaluru - CPCB": { "name": "Hebbal", "lat": 13.0358, "lon": 77.5970 },
-    "BWSSB Kadabesanahalli, Bengaluru - CPCB": { "name": "BWSSB Kadabesanahalli", "lat": 12.9298, "lon": 77.6770 }
+    "BTM Layout, Bengaluru - CPCB":           {"name": "BTM Layout",        "lat": 12.9166, "lon": 77.6101},
+    "Hebbal, Bengaluru - KSPCB":              {"name": "Hebbal",            "lat": 13.0358, "lon": 77.5970},
+    "Silk Board, Bengaluru - KSPCB":          {"name": "Silk Board",        "lat": 12.9172, "lon": 77.6227},
+    "Jayanagar 5th Block, Bengaluru - KSPCB": {"name": "Jayanagar",         "lat": 12.9250, "lon": 77.5938},
+    "Hombegowda Nagar, Bengaluru - KSPCB":    {"name": "Hombegowda Nagar",  "lat": 12.9512, "lon": 77.5945},
+    "Bapuji Nagar, Bengaluru - KSPCB":        {"name": "Bapuji Nagar",      "lat": 12.9519, "lon": 77.5398}
   },
   "cpcb_resource_id": "3b01bcb8-0b14-4abf-b6f2-c1bfd384ba69",
   "emission_sources": [

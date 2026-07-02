@@ -269,7 +269,7 @@
     </div>
     <div class="refresh-info">
       <div class="pulse-dot"></div>
-      Auto-refresh in <span id="countdown">30</span>s
+      Auto-refresh in <span id="countdown">15:00</span>
     </div>
   </header>
 
@@ -519,10 +519,14 @@
     // ── Auto-refresh countdown ───────────────────────────────────────────────
     function startCountdown() {
       const el = document.getElementById("countdown");
-      countdown = 30;
+      countdown = 900; // 15 minutes in seconds
       const interval = setInterval(() => {
         countdown--;
-        if (el) el.textContent = countdown;
+        if (el) {
+          const m = String(Math.floor(countdown / 60)).padStart(2, '0');
+          const s = String(countdown % 60).padStart(2, '0');
+          el.textContent = `${m}:${s}`;
+        }
         if (countdown <= 0) {
           clearInterval(interval);
           fetchAll().then(() => startCountdown());
